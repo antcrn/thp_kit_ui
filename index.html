@@ -36,38 +36,65 @@
     </div>
     <!-- cart start -->
     <div class="cart-navbar bg-light" id="cart-sidebar">
-        <nav class="nav nav-sidebar-cart">
-            <div class="text-center">
-                <div class="nav_list">
-                    <div class="mb-5">
-                        <div class="row g-2">
-                            <div class="col-md-3 card bg-light img-dishe px-2">
-                                <img src="https://picsum.photos/50/50" class="img-fluid rounded-x align-middle" alt="...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="card-title me-5">Burger mozza XL</h6>
-                                        <strong class="card-text">50€</strong>
-                                    </div>
-                                    <div class="d-flex flex-row">
-                                        <i class="fas fa-times text-secondary me-3"></i>
-                                        <select class="form-select w-100" aria-label="Default select example">
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                        </select>
-                                    </div>
-                                </div>
+        <nav class="nav-sidebar-cart">
+            <div class="card m-3 rounded-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/100/100" class="img-fluid rounded-3 m-2" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-text">Item title</h5>
+                            <div class="row add-delete">
+                                <div class="col"> <a href="#">-</a><a href="#" class="border-qty m-1 rounded-1">4</a><a href="#">+</a> </div>
+                                <div class="col">&euro; 44.00</div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-1">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
                 </div>
-                <button class="btn btn-primary">Check out</button>
             </div>
-        </nav>
+            <div class="card m-3 rounded-3">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/100/100" class="img-fluid rounded-3 m-2" alt="...">
+                    </div>
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-text">Item title</h5>
+                            <div class="row add-delete">
+                                <div class="col"> <a href="#">-</a><a href="#" class="border-qty m-1 rounded-1">1</a><a href="#">+</a> </div>
+                                <div class="col">&euro; 4.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card m-2 p-2">
+                <div>
+                    <h5><b>Summary</b></h5>
+                </div>
+                <hr>
+                <div class="row">
+                    <h5>3 ITEMS</h5>
+                    <div class="col">&euro; 100.00 H.T</div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h5>TOTAL PRICE</h5>
+                    </div>
+                    <div class="col text-right mb-3">&euro; 120.00 TTC</div>
+                </div>
+                <button class="btn btn-primary">CHECKOUT</button>
+            </div>
+    </div>
+    </nav>
     </div>
     <!--Container Main start-->
 
@@ -183,7 +210,7 @@
                                     <div class="">
                                         <div class="card-body ">
                                             <div class="d-flex justify-content-between text-dark">
-                                                <h5 class="card-title me-5">Burger mozza XL</h5>
+                                                <h5 class="card-title me-5">Pizza 4 from</h5>
                                                 <strong class="card-text">50€</strong>
                                             </div>
 
@@ -354,41 +381,14 @@
         <div class="row">
             <div class="col-sm-12 col-md-4">
                 <div class="card rounded-x mb-3">
-                    <div class="row">
+                    <div class="row g-0">
                         <div class="col-md-4 card rounded-x img-dishe px-2">
                             <img src="https://picsum.photos/50/50" class="img-fluid rounded-x align-middle" alt="...">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
-                                    <h5 class="card-title me-5">Burger mozza XL</h5>
-                                    <strong class="card-text">50€</strong>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <i class="fas fa-times text-secondary me-3"></i>
-                                    <select class="form-select w-35" aria-label="Default select example">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="card rounded-x mb-3">
-                    <div class="row ">
-                        <div class="col-md-4 card rounded-x img-dishe px-2">
-                            <img src="https://picsum.photos/50/50" class="img-fluid rounded-x align-middle" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between">
-                                    <h5 class="card-title me-5">Burger mozza S</h5>
+                                    <h6 class="card-title me-5">Burger mozza XL</h6>
                                     <strong class="card-text">50€</strong>
                                 </div>
                                 <div class="d-flex flex-row">
@@ -415,7 +415,61 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
-                                    <h5 class="card-title me-5">Burger mozza XL</h5>
+                                    <h6 class="card-title me-5">Burger mozza XL</h6>
+                                    <strong class="card-text">50€</strong>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <i class="fas fa-times text-secondary me-3"></i>
+                                    <select class="form-select w-35" aria-label="Default select example">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card rounded-x mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 card rounded-x img-dishe px-2">
+                            <img src="https://picsum.photos/50/50" class="img-fluid rounded-x align-middle" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title me-5">Burger mozza XL</h6>
+                                    <strong class="card-text">50€</strong>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <i class="fas fa-times text-secondary me-3"></i>
+                                    <select class="form-select w-35" aria-label="Default select example">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="card rounded-x mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 card rounded-x img-dishe px-2">
+                            <img src="https://picsum.photos/50/50" class="img-fluid rounded-x align-middle" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="card-title me-5">Burger mozza XL</h6>
                                     <strong class="card-text">50€</strong>
                                 </div>
                                 <div class="d-flex flex-row">
