@@ -137,7 +137,7 @@ a {
     color: var(--white-color)
 }
 
-.active::before {
+.nav_list .active::before {
     content: '';
     position: absolute;
     left: 0;
@@ -212,10 +212,6 @@ a {
   cart sidebar
 */
 
-.show-cart {
-    right: 30%
-}
-
 .cart_toggle {
     font-size: 1.5rem;
     cursor: pointer
@@ -223,11 +219,11 @@ a {
 
 .cart-navbar {
     position: fixed;
-    /*right: 25%;*/
-    width: var(--cart-width);
+    right: 0;
+    width: 0px;
     height: 100vh;
     background-color: var(--first-color);
-    padding: .5rem 1rem 0 0;
+    /* padding: .5rem 1rem 0 0; */
     transition: .5s;
     z-index: var(--z-fixed)
 }
@@ -237,31 +233,68 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden
+    width: 0;
 }
 
-@media screen and (min-width: 768px) {
+.show-cart {
+    width: 30%;
+}
+
+.body-pb {
+    padding-right: calc(var(--cart-width) +30%)
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
     body {
         margin: calc(var(--header-height) + 1rem) 0 0 0;
         padding-right: calc(var(--cart-width) + 2rem)
     }
     .cart-navbar {
         right: 0;
-        padding: 1rem 1rem 0 0
     }
     .header-cart {
         height: calc(var(--header-height) + 1rem);
         padding: 0 2rem 0 calc(var(--cart-width) + 2rem)
     }
-    .show-cart {
-        width: calc(var(--cart-width) + 20%)
-    }
     .body-pb {
-        padding-right: calc(var(--cart-width) + 20%)
+        overflow: hidden;
+    }
+    .show-cart {
+        width: 80%;
+        overflow: auto;
     }
 }
 
 #cart-show {
-    right: 25%;
-    width: var(--cart-width);
+    right: 0%;
+    /*width: var(--cart-width);*/
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        margin: calc(var(--header-height) + 1rem) 0 0 0;
+        padding-right: calc(var(--cart-width) + 2rem)
+    }
+    .cart-navbar {
+        right: 0;
+    }
+    .header-cart {
+        height: calc(var(--header-height) + 1rem);
+        padding: 0 2rem 0 calc(var(--cart-width) + 2rem)
+    }
+    .body-pb {
+        overflow: hidden;
+    }
+    .show-cart {
+        top: 68px;
+        width: 95%;
+        overflow: auto;
+    }
+    .img-fluid {
+        max-width: 40%;
+    }
+}
+
+.mt-6 {
+    margin-top: 5rem!important;
 }
